@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="author" content="EQUIPOS">
+    <meta name="description" content="LENGUA INDIGENAS">
+    <title> APRENDE-YUHMU </title>
+    <link rel="stylesheet" href="nivel2.css">
+</head>
+<body>
+
+      <main class="juego">
+
+        <header class="barra">
+            <h1>¡Vamos a practicar!</h1>
+            <span id="progreso">Pregunta 1 de 5</span>
+            <span id="puntos">⭐ 0 puntos</span>
+        </header>
+
+        <section class="pregunta">
+            <h2 id="instruccion">
+                ¿Qué palabra corresponde a esta imagen?
+            </h2>
+
+            <img id="imagen-pregunta"
+                 src="gato.jpg"alt="Gato">
+
+            <div id="opciones" class="opciones"></div>
+
+            <p id="resultado" aria-live="polite"></p>
+
+            <button id="continuar" hidden>
+                Siguiente pregunta →
+            </button>
+        </section>
+
+        <a href="intex.html" class="volver">
+            ← Volver a aprender
+        </a>
+
+    </main>
+
+    <script src="nivel2.js"></script>
+</body>
+</html>

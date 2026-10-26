@@ -1,0 +1,74 @@
+.juego {
+    max-width: 750px;
+    margin: 20px auto;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pregunta {
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#imagen-pregunta {
+    width: 180px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.opciones {
+    display: grid;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.opciones button {
+    background-color: #dcebd5;
+    color: #365a42;
+    border: 2px solid #a5bba0;
+    font-weight: bold;
+}
+
+.opciones button:hover:not(:disabled) {
+    background-color: #c5dfbb;
+}
+
+.opciones button:disabled {
+    cursor: default;
+    opacity: 0.85;
+}
+
+#resultado {
+    font-weight: bold;
+    min-height: 24px;
+}
+
+#continuar {
+    background-color: #52785a;
+    color: white;
+}
+
+.volver {
+    display: inline-block;
+    margin-top: 20px;
+    color: #365a42;
+}
+
+@media (max-width: 500px) {
+    .barra {
+        flex-direction: column;
+    }
+
+    .pregunta {
+        padding: 15px;
+    }
+}
