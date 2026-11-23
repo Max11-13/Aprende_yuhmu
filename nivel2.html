@@ -1,44 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="UTF-8">
     <meta name="author" content="EQUIPOS">
     <meta name="description" content="LENGUA INDIGENAS">
-    <title> APRENDE-YUHMU </title>
+    <title>APRENDE-YUHMU</title>
     <link rel="stylesheet" href="nivel2.css">
 </head>
 <body>
+  
+  <header class="encabezado">
+        <h2 class="titulo">¡Aprendamos!</h2>
+        <h2 class="span" id="tituloNivel">Nivel 2</h2>
 
-      <main class="juego">
+          <div class="globo" id="mensaje">
+    ¡ESCUCHA Y APRENDE!
+    </div>
 
-        <header class="barra">
-            <h1>¡Vamos a practicar!</h1>
-            <span id="progreso">Pregunta 1 de 5</span>
-            <span id="puntos">⭐ 0 puntos</span>
-        </header>
+   
+  </header>
 
-        <section class="pregunta">
-            <h2 id="instruccion">
-                ¿Qué palabra corresponde a esta imagen?
-            </h2>
+  <main class="principal">
+    <section class="informacion">
+            <img src="imagen/cc.jpg" alt="Imagen de un perro" class="dur">
+   <div class="marco"></div>
+        
+        <!-- NIVEL 1 -->
+       <div class="nivel" id="nivel1">
+          <div class="cuadro1">
+                <img src="imagen/uno.jpg" alt="Imagen de uvas" class="palabra2">
+                <h3>Uno</h3>
+                <h2>Na</h2>
 
-            <img id="imagen-pregunta"
-                 src="gato.jpg"alt="Gato">
+                <audio id="audio1">
+                    <source src="audio/uno.mp3" type="audio/mpeg">
+                    no es compatible con tu navegador
+                </audio>
 
-            <div id="opciones" class="opciones"></div>
+                <button class="pronunciacion" id="boton1" type="button">PRONUNCIACIÓN</button>
+            </div>
 
-            <p id="resultado" aria-live="polite"></p>
+            <div class="cuadro2">
+                 <img src="imagen/dos.jpg" alt="Imagen de sandía" class="palabra2">
+                <h3>Dos</h3>
+                <h2>Yoho</h2>
 
-            <button id="continuar" hidden>
-                Siguiente pregunta →
-            </button>
-        </section>
+                <audio id="audio2">
+                    <source src="audio/dos.mp3" type="audio/mpeg">
+                    no es compatible con tu navegador
+                </audio>
 
-        <a href="intex.html" class="volver">
-            ← Volver a aprender
-        </a>
+                <button class="pronunciacion" id="boton2">PRONUNCIACIÓN</button>
+            </div>
 
-    </main>
+            <div class="cuadro3">
+                  <img src="imagen/tres.jpg" alt="Imagen de piña" class="palabra2">
+                <h3>Tres</h3>
+                <h2>Hiu </h2>
 
-    <script src="nivel2.js"></script>
+                <audio id="audio3">
+                    <source src="audio/tres.mp3" type="audio/mpeg">
+                    no es compatible con tu navegador
+                </audio>
+
+                <button class="pronunciacion" id="boton3">PRONUNCIACIÓN</button>
+            </div>
+        </div>
+
+        <!-- NIVEL 2 -->
+        <div class="nivel" id="nivel2" style="display: none;">
+            <div class="cuadro4">
+                <img src="imagen/cuatro.jpg" alt="Manzana" class="palabra2">
+                <h3>Cuatro</h3>
+                <h2> Goho</h2>
+                
+                <audio id="audio4">
+                    <source src="audio/cuatro.mp3" type="audio/mpeg">
+                    no es compatible con tu navegador
+                </audio>
+
+                <button class="pronunciacion" id="boton4">PRONUNCIACIÓN</button>
+            </div>
+
+            <div class="cuadro5">
+                <img src="imagen/cinco.jpg" alt="Mango" class="palabra2">
+                <h3>Cinco</h3>
+                <h2> K'uta</h2>
+                
+                <audio id="audio5">
+                    <source src="audio/cinco.mp3" type="audio/mpeg">
+                    no es compatible con tu navegador
+                </audio>
+
+                <button class="pronunciacion" id="boton5">PRONUNCIACIÓN</button>
+            </div>
+
+            
+        </div>
+    </section>
+
+  
+    <div class="botones">
+        <button class="navegacion" id="Anterior" style="display: none;">Atrás</button>
+        <button class="navegacion" id="Siguiente">Siguiente</button>
+        <button class="navegacion" id="jugar" style="display: none;">¡Jugar!</button>
+        <button class="navegacion" id="atras">Mapa</button>
+    </div>
+  </main>
+
+  <script src="nivel2.js"></script>
 </body>
 </html>

@@ -1,0 +1,399 @@
+    body {
+    background-color: #f8f1e1;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+
+.marco-ventana {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 12px solid #2b7a3d; /* Color verde de tu diseño */
+    border-radius: 12px;       /* Esquinas redondeadas opcionales */
+    pointer-events: none;      /* Esto permite hacer clic en los elementos de adentro sin que el marco estorbe */
+    z-index: 9999;             /* Asegura que esté por encima de todo */
+}
+
+.titulo {
+ text-align: center;
+    font-size: 50px;
+    color: #2e6b4f;
+    
+    /* 1. Agrega position absolute (y opcionalmente position: relative al contenedor padre) */
+    position: absolute; 
+    
+    /* 2. Ahora sí funcionarán left y bottom (nota: quita el espacio entre el número y los px, ej. "34px") */
+    left: 500px;
+    bottom: 540px;
+}
+
+
+
+.escuchar {
+    width: 200px;
+    height: 150px;
+    background-color: #166f08;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    position: absolute;
+    left: 890px;
+    bottom: 390px;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 30px;
+    border: 3px solid #000000;
+    
+  
+    cursor: pointer;
+   
+}
+
+.escuchar:hover{
+ background-color: #6b8e23;
+
+}
+
+
+
+
+
+
+
+.f11 {
+    width: 200px;
+    height: 50px;
+    background-color: #6e9eb5;
+    color: rgb(3, 2, 2);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+    position: absolute;
+    left: 200px;
+    bottom: 130px;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    border: 3px solid #000000;
+    border-radius: 200px;
+  
+    cursor: pointer;
+    margin-top: px;
+}
+
+
+.f11:hover{
+ background-color: #0e9ddf;
+
+}
+
+
+.imagen1 {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 200px;
+    bottom: 200px;
+}
+
+.f12 {
+    width: 200px;
+    height: 50px;
+    background-color: #f4b6c2;
+    color: rgb(1, 1, 1);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+    position: absolute;
+    left: 430px;
+    bottom: 130px;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    border: 3px solid #000000;
+    border-radius: 200px;
+  
+    cursor: pointer;
+    margin-top: px;
+}
+
+.f12:hover{
+ background-color: #be68bf;
+
+}
+
+
+.imagen2 {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 430px;
+    bottom: 200px;
+}
+
+.f13 {
+    width: 200px;
+    height: 50px;
+    background-color: #c9b4e8;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+    position: absolute;
+    left: 660px;
+    bottom: 130px;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    border: 3px solid #000000;
+    border-radius: 200px;
+  
+    cursor: pointer;
+    margin-top: px;
+
+}
+
+.f13:hover{
+ background-color: #9461c7;
+
+}
+
+
+.imagen3 {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 660px;
+    bottom: 200px;
+}
+
+
+.f14 {
+    width: 200px;
+    height: 50px;
+    background-color: #f4c95d;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+    position: absolute;
+    left: 890px;
+    bottom: 130px;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    border: 3px solid #000000;
+    border-radius: 200px;
+  
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.f14:hover{
+ background-color: #ece341;
+
+}
+
+
+.imagen4 {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 890px;
+    bottom: 200px;
+}
+
+
+.f15 {
+    width: 200px;
+    height: 50px;
+    background-color: #d98463;
+    color: rgb(3, 2, 2);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+    position: absolute;
+    left: 1120px;
+    bottom: 130px;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    border: 3px solid #000000;
+    border-radius: 200px;
+  
+    cursor: pointer;
+    margin-top: px;
+}
+
+
+.f15:hover{
+ background-color: #8f3703;
+
+}
+
+
+.imagen5 {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 1120px;
+    bottom: 200px;
+}
+
+.globo {
+    position: absolute;
+    top: 170px;
+    left: 460px;
+
+    width: 220px;
+    padding: 30px;
+
+    background-color: white;
+    color: #365a42;
+
+    border: 3px solid #222222;
+    border-radius: 25px;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+
+    box-shadow: 4px 4px 0px #00000030;
+
+    z-index: 5;
+}
+
+.globo::after {
+    content: "";
+    position: absolute;
+
+    right: 270px;
+    top: calc(50% - 11px);
+
+    width: 22px;
+    height: 22px;
+
+    background-color: white;
+    border-right: 3px solid #222222;
+    border-bottom: 3px solid #222222;
+
+    transform: rotate(135deg);
+}
+.pregunta {
+    width: 200px;
+    height: 60px;
+    background-color: #19711f;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+    position: absolute;
+    left: 500px;
+    bottom: 40px;
+    
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    border: 3px solid #000000;
+    border-radius: 200px;
+  
+    cursor: pointer;
+    margin-top: px;
+
+}
+
+
+.pregunta:hover{
+ background-color: #6b8e23;
+
+}
+
+
+.atras {
+    width: 200px;
+    height: 60px;
+    background-color: #19711f;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+    position: absolute;
+    left: 740px;
+    bottom: 40px;
+    
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    border: 3px solid #000000;
+    border-radius: 200px;
+  
+    cursor: pointer;
+    margin-top: px;
+
+}
+
+
+.atras:hover{
+ background-color: #6b8e23;
+
+}
+
+.otro {
+    width: 200px;
+    height: 60px;
+    background-color: #19711f;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+    position: absolute;
+    left: 970px;
+    bottom: 40px;
+    
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    border: 3px solid #000000;
+    border-radius: 200px;
+  
+    cursor: pointer;
+    margin-top: px;
+
+}
+
+
+#contador {
+    position: absolute;
+    left: 250px;
+    top: 590px;
+    font-size: 20px;
+    color: #333;
+     font-family: "Comic Sans MS", sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+.imagen6 {
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    left: 200px;
+    bottom: 290px;
+}
+
+
+
+
+

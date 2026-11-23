@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f1e1;
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+
+.marco-ventana {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 12px solid #2b7a3d; 
+    border-radius: 12px;      
+    pointer-events: none;     
+    z-index: 9999;           
+}
+.dur {
+    width: 200px;
+    height: 160px;
+    position: absolute;
+    left: 40px;
+    bottom: 480px;
+}
+
+.globo {
+    position: absolute;
+    top: 85px;
+    left: 270px;
+
+    width: 220px;
+    padding: 20px;
+
+    background-color: white;
+    color: #365a42;
+
+    border: 3px solid #222222;
+    border-radius: 25px;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+
+    box-shadow: 4px 4px 0px #00000030;
+
+    z-index: 5;
+}
+
+.globo::after {
+    content: "";
+    position: absolute;
+
+    right: 248px;
+    top: calc(50% - 11px);
+
+    width: 22px;
+    height: 22px;
+
+    background-color: white;
+    border-right: 3px solid #222222;
+    border-bottom: 3px solid #222222;
+
+    transform: rotate(135deg);
+}
+
+
+.encabezado {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 30px;
+    color: #000000;
+    font-family: "Comic Sans MS", sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.span {
+    font-size: 24px;
+    color: #000000;
+    margin-top: 0;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.informacion {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nivel {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+/* TARJETAS */
+
+.cuadro1, .cuadro2, .cuadro3,
+.cuadro4, .cuadro5, .cuadro6 {
+    width: 300px;
+    height: 370px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* COLORES DE LAS TARJETAS */
+
+.cuadro1, .cuadro4 {
+    background-color: #a7c957;
+}
+
+.cuadro2, .cuadro5 {
+    background-color: #6E9EB5;
+}
+
+.cuadro3, .cuadro6 {
+    background-color: #c9b4e8;
+}
+
+/* IMÁGENES */
+
+.palabra2 {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* BOTONES DE PRONUNCIACIÓN */
+
+.button-pronunciacion {
+    width: 150px;
+    height: 40px;
+    background-color: #4B3621;
+    color: white;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.button-pronunciacion:hover {
+    background-color: #213d27;
+}
+
+/* CONTENEDOR DE BOTONES */
+
+.contenedor-botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* BOTONES DE NAVEGACIÓN */
+
+.btn-navegacion {
+    width: 150px;
+    height: 40px;
+    background-color: #166f08;
+    color: white;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: 3px solid #000000;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.btn-navegacion:hover {
+    background-color: #1caf21;
+}

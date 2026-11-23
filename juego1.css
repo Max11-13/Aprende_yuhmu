@@ -1,0 +1,239 @@
+
+body{
+
+    background-color: #F8F1E1;
+}
+
+.dur {
+    width: 200px;
+    height: 160px;
+    position: absolute;
+    left: 95px;
+    bottom: 525px;
+}
+
+
+.globo {
+    position: absolute;
+    top:50px;
+    left: 290px;
+
+    width: 220px;
+    padding: 26px;
+
+    background-color: white;
+    color: #365a42;
+
+    border: 3px solid #222222;
+    border-radius: 25px;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+
+    box-shadow: 4px 4px 0px #00000030;
+
+    z-index: 5;
+}
+
+.globo::after {
+    content: "";
+    position: absolute;
+
+    right: 258px;
+    top: calc(50% - 11px);
+
+    width: 22px;
+    height: 22px;
+
+    background-color: white;
+    border-right: 3px solid #222222;
+    border-bottom: 3px solid #222222;
+
+    transform: rotate(132deg);
+}
+
+
+
+.memorama {
+    max-width: 760px;
+    margin: 24px auto;
+}
+
+.memorama-cabecera {
+    text-align: center;
+    color: #000000;
+}
+
+.memorama-cabecera h1 {
+    margin-bottom: 8px;
+    color: #2e6b4f;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 50px;
+   
+}
+
+
+
+.volver-memorama {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 40px;
+    background-color: #2e6b4f;
+    color: #ffffff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+    left: -200px;
+    top: -40px;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.volver-memorama:hover {
+    text-decoration: underline;
+}
+
+.memorama-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 60px;
+    margin: 20px -250px;
+    padding: 12px;
+    color: #fff;
+    background: #4b3621;
+    border-radius: 16px;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.memorama-panel p {
+    margin: 0;
+    
+}
+
+.memorama-panel button {
+    background: #2e6b4f;
+    color: #fff;
+
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 40px;
+   
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    left: 100px;
+    top: -5px;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 15px;
+    font-weight: arial;
+    
+}
+
+
+
+.tablero-memorama {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    
+    transform: translateX(-100px); 
+}
+
+.carta-memorama {
+     width: 220px;
+    height: 220px;
+    min-height: 220px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+
+    background: #A7C957;
+    border: 3px solid #000000;
+    border-radius: 16px;
+}
+
+.carta-memorama:hover:not(:disabled) {
+    transform: translateY(-2px);
+    filter: brightness(1.06);
+}
+
+.carta-memorama.volteada,
+.carta-memorama.encontrada {
+    background: #d9c9a7;
+    color: #365a42;
+    border-color: #000000;
+    box-shadow: 0 4px 0 #000000;
+}
+
+.carta-memorama.encontrada {
+    background: #f7c95d;
+}
+
+.contenido-carta {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #365a42;
+}
+
+.contenido-carta img {
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+}
+
+.estado-juego {
+    min-height: px;
+    margin-left: 300px;
+    font-weight: bold;
+}
+
+.boton-memorama {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    background: #2e6b4f;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.boton-memorama:hover {
+    filter: brightness(0.94);
+}
+
+@media (max-width: 520px) {
+    .tablero-memorama {
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+    }
+
+    .carta-memorama {
+        min-height: 125px;
+    }
+}
+
+

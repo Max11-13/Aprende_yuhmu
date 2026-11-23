@@ -1,0 +1,146 @@
+body{
+    background-image: url("imagen/mapa.jpg");
+    background-size: 1580px 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.a{
+
+      position: absolute;
+    top: 10px;
+    left: 20%;
+    transform: translateX(-50%);
+
+    background-color: #F5EFE4;
+    color: #365a42;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+
+    padding: 15px 35px;
+    border: 4px solid #789477;
+    border-radius: 25px;
+
+    text-shadow: 2px 2px 3px #a9bfa5;
+
+    box-shadow: 0 5px 10px #00000030;
+
+    z-index: 2;
+    white-space: nowrap; 
+}
+ 
+
+
+.boton1, .boton2, .boton3,
+.boton4, .boton5, .boton6 {
+
+    position: absolute;
+    width: 110px;
+    height: 55px;
+    background-color: #4a3507;
+    color: #f6f6f6;
+    border: 3px solid #000000;
+    border-radius: 100px;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transform: translate(-50%, -50%);
+}
+
+/* POSICIÓN DE CADA NIVEL */
+
+.boton1 {
+    left: 17%;
+    top: 86%;
+}
+
+.boton2 {
+    left: 30%;
+    top: 88%;
+}
+
+.boton3 {
+    left: 44%;
+    top: 85%;
+}
+
+.boton4 {
+    left: 58%;
+    top: 88%;
+}
+
+.boton5 {
+    left: 72%;
+    top: 83%;
+}
+
+.boton6 {
+    left: 88%;
+    top: 88%;
+}
+
+/* PERSONAJE */
+
+.mas {
+    transform: scaleX(-1);
+    position: absolute;
+    width: 500px;
+    height: auto;
+    left: 60%;
+    top: 3%;
+}
+
+.boton1:hover, .boton2:hover,
+.boton3:hover, .boton4:hover,
+.boton5:hover, .boton6:hover {
+    background-color: #d9c9a7;
+    color: rgb(6, 5, 5);
+}
+
+.globo {
+    position: absolute;
+    top: 150px;
+    left: 680px;
+
+    width: 220px;
+    padding: 20px;
+
+    background-color: white;
+    color: #365a42;
+
+    border: 3px solid #222222;
+    border-radius: 25px;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+
+    box-shadow: 4px 4px 0px #00000030;
+
+    z-index: 5;
+}
+
+/* Punta del globo */
+
+.globo::after {
+    content: "";
+    position: absolute;
+
+    right: -14px;
+    top: calc(50% - 11px);
+
+    width: 22px;
+    height: 22px;
+
+    background-color: white;
+    border-right: 3px solid #222222;
+    border-bottom: 3px solid #222222;
+
+    transform: rotate(-45deg);
+}
